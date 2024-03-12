@@ -1,5 +1,7 @@
 {
   "name": "mty-demo",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
