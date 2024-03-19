@@ -1,0 +1,22 @@
+// 为整个页面添加背景颜色
+ion-content {
+  background-color: #f4f4f4;
+}
+
+// 为按钮添加样式
+ion-button {
+  background-color: #4a8bfc;
+  color: white;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}
+
+// 为文本添加样式
+.myDiv {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  text-align: justify;
+}
