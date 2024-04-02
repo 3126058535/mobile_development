@@ -1,0 +1,7 @@
+{
+  "name": "mty-course-demos",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

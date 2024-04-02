@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/tab2" text="后退"></ion-back-button>
+    </ion-buttons>
+    <ion-title>【b03】双向绑定</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <label class="input-label">姓名：</label>
+  <input class="input-field" [(ngModel)]="xm" (ngModelChange)="showResult()" placeholder="请输入姓名">
+  <br>
+  <p class="project-label">你参加的项目是（必须选一项）：</p>
+  <div class="radio-container">
+    <input type="radio" name="g1" value='篮球' checked [(ngModel)]="r" (ngModelChange)="showResult()">
+    <label class="radio-label">篮球</label>
+    <input type="radio" name="g1" value='排球' [(ngModel)]="r" (ngModelChange)="showResult()">
+    <label class="radio-label">排球</label>
+  </div>
+  <br>
+  <div [innerHTML]="result"></div>
+  <div id="container">
+    <div id="mydiv"></div>
+  </div>
+
+</ion-content>
+
+<style>
+  .input-label {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .input-field {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .project-label {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .radio-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .radio-label {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+</style>

@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>BaiduMap</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item lines="none">
+      <button class="custom-button" (click)="showPage1()">基本地图与控件</button>
+    </ion-item>
+    <ion-item lines="none">
+      <button class="custom-button" (click)="showPage2()">覆盖物</button>
+    </ion-item>
+    <ion-item lines="none">
+      <button class="custom-button" (click)="showPage3()">信息窗口</button>
+    </ion-item>
+    <ion-item lines="none">
+      <button class="custom-button" (click)="showPage4()">标注</button>
+    </ion-item>
+    <ion-item lines="none">
+      <button class="custom-button" (click)="showPage5()">全景图与地址解析</button>
+    </ion-item>
+    <ion-item lines="none">
+      <button class="custom-button" (click)="showPage6()">定位</button>
+    </ion-item>
+    <ion-item lines="none">
+      <button class="custom-button" (click)="showPage7()">公交查询与位置检索</button>
+    </ion-item>
+    <ion-item lines="none">
+      <button class="custom-button" (click)="showPage8()">路线规划与距离计算</button>
+    </ion-item>
+    <ion-item lines="none">
+      <button class="custom-button" (click)="showPage9()">GPS导航</button>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<style>
+  .custom-button {
+    display: block;
+    width: 100%;
+    max-width: 300px; /* adjust width as needed */
+    margin: 10px auto; /* center the button */
+    padding: 10px 10px; /* adjust padding as needed */
+    background-color: #007bff; /* your desired button color */
+    color: #fff; /* text color */
+    border: none;
+    border-radius: 5px; /* rounded corners */
+    cursor: pointer;
+    font-size: 16px; /* adjust font size as needed */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .custom-button:hover {
+    background-color: #0056b3; /* hover color */
+  }
+</style>

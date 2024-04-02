@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/tab4" text="后退"></ion-back-button>
+    </ion-buttons>
+    <ion-title>【D03】信息窗口</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="button-container">
+    <ion-button size="small" shape="round" (click)="click1()">文字</ion-button>
+    <ion-button size="small" shape="round" (click)="click2()">图文</ion-button>
+    <ion-button size="small" shape="round" (click)="click3()">多点</ion-button>
+    <ion-button size="small" shape="round" (click)="click4()">获取窗口信息</ion-button>
+  </div>
+  <hr>
+  <div class="tip-container">
+    <ion-label color="danger">{{ tip }}</ion-label>
+  </div>
+  <hr>
+  <div id="bdmap" class="map-container"></div>
+</ion-content>
+
+<style>
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .tip-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .map-container {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  ion-button {
+    --padding-start: 8px;
+    --padding-end: 8px;
+    --border-radius: 20px;
+    font-size: 12px;
+  }
+</style>

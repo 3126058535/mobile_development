@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/tab4" text="后退"></ion-back-button>
+    </ion-buttons>
+    <ion-title>【D08】</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <div class="button-container">
+    <ion-button size="small" shape="round" (click)="click1()">步行</ion-button>
+    <ion-button size="small" shape="round" (click)="click2()">骑行</ion-button>
+    <ion-button size="small" shape="round" (click)="click3()">驾车</ion-button>
+    <ion-button size="small" shape="round" (click)="click4()">距离计算</ion-button>
+  </div>
+  <div id="bdmap" class="map-container"></div>
+  <div id="r-result"></div>
+</ion-content>
+
+<style>
+  .button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+
+  .map-container {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  ion-button {
+    --border-radius: 8px;
+    --background: #3880ff; /* Button background color */
+    --color: #ffffff; /* Button text color */
+    --padding-start: 16px; /* Adjust padding */
+    --padding-end: 16px; /* Adjust padding */
+    font-size: 14px; /* Button text size */
+  }
+</style>

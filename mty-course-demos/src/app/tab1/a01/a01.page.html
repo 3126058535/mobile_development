@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/tab1" text="返回"></ion-back-button>
+    </ion-buttons>
+    <ion-title>a01</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+    <div>
+      <div>
+        <button class="custom-button" (click)='click1()'>Hello World</button>
+      </div>
+      <div>
+        <button class="custom-button" (click)='click2()'>var和let的区别</button>
+      </div>
+      <div>
+        <button class="custom-button" (click)='click3()'>var的问题示例</button>
+      </div>
+      <div>
+        <button class="custom-button" (click)='click4()'>let消除var很多bug</button>
+      </div>
+    </div>
+   <br/>
+   <div id='mydiv'></div>
+</ion-content>
+
+<style>
+  .custom-button {
+    display: block;
+    width: 100%;
+    max-width: 300px; /* adjust width as needed */
+    margin: 10px auto; /* center the button */
+    padding: 10px 20px; /* adjust padding as needed */
+    background-color: #007bff; /* your desired button color */
+    color: #fff; /* text color */
+    border: none;
+    border-radius: 5px; /* rounded corners */
+    cursor: pointer;
+    font-size: 16px; /* adjust font size as needed */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .custom-button:hover {
+    background-color: #0056b3; /* hover color */
+  }
+</style>

@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Angular</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" padding>
+  <ion-list>
+    <ion-item lines="none">
+      <button class="custom-button" (click)="showPage1()">插值表达式</button>
+    </ion-item>
+    <ion-item lines="none">
+      <button class="custom-button" (click)="showPage2()">单向绑定</button>
+    </ion-item>
+    <ion-item lines="none">
+      <button class="custom-button" (click)="showPage3()">双向绑定</button>
+    </ion-item>
+    <ion-item lines="none">
+      <button class="custom-button" (click)="showPage4()">内置指令</button>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<style>
+  .custom-button {
+    display: block;
+    width: 100%;
+    max-width: 300px; /* adjust width as needed */
+    margin: 10px auto; /* center the button */
+    padding: 10px 20px; /* adjust padding as needed */
+    background-color: #007bff; /* your desired button color */
+    color: #fff; /* text color */
+    border: none;
+    border-radius: 5px; /* rounded corners */
+    cursor: pointer;
+    font-size: 16px; /* adjust font size as needed */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .custom-button:hover {
+    background-color: #0056b3; /* hover color */
+  }
+</style>

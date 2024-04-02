@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/tab3" text="后退"></ion-back-button>
+    </ion-buttons>
+    <ion-title>【c01】基本控件</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <p class="section-heading">按钮基本用法</p>
+  <ion-button class="custom-button">按钮1</ion-button>
+  <ion-button shape="round" class="custom-button">按钮2</ion-button>
+  <ion-button class="custom-button">
+    <ion-icon name="home" slot="start"></ion-icon>
+    按钮3
+  </ion-button>
+  <ion-button fill="clear" class="custom-button">
+    <ion-icon name="home" slot="icon-only"></ion-icon>
+  </ion-button>
+  <ion-list>
+    <ion-list-header class="header">复选框 请选择你喜欢的体育项目（可多选）</ion-list-header>
+    <ion-item>
+      <ion-label>篮球</ion-label>
+      <ion-checkbox [(ngModel)]="check1" (ionChange)="showResult()"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>排球</ion-label>
+      <ion-checkbox [(ngModel)]="check2" (ionChange)="showResult()"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+  <ion-radio-group [(ngModel)]="r" (ionChange)="showResult()">
+    <ion-list-header class="header">单选按钮 你参加的项目是（必须选一项）</ion-list-header>
+    <ion-item>
+      <ion-label>篮球</ion-label>
+      <ion-radio value="篮球"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>排球</ion-label>
+      <ion-radio value="排球"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+  <div [innerHTML]="result"></div>
+</ion-content>
+
+<style>
+  .section-heading {
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .custom-button {
+    margin-bottom: 10px;
+  }
+
+  .header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+</style>

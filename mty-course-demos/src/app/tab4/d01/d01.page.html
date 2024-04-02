@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/tab4" text="后退"></ion-back-button>
+    </ion-buttons>
+    <ion-title>【D01】地图与控件</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="button-container">
+    <ion-button small expand="block" shape="round" (click)="click1()">显示开封地图</ion-button>
+    <ion-button small expand="block" shape="round" (click)="click2()">切换[开封/北京]</ion-button>
+  </div>
+  <div id="bdmap" class="map-container"></div>
+</ion-content>
+
+<style>
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .map-container {
+    height: 400px;
+    width: calc(100% - 20px);
+    margin: 0 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+</style>

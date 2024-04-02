@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/tab4" text="后退"></ion-back-button>
+    </ion-buttons>
+    <ion-title>【D02】覆盖物</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="button-container">
+    <ion-button size="small" shape="round" (click)='click1()'>折线</ion-button>
+    <ion-button size="small" shape="round" (click)='click2()'>箭头折线</ion-button>
+    <ion-button size="small" shape="round" (click)='click3()'>圆</ion-button>
+    <ion-button size="small" shape="round" (click)='click4()'>多边形</ion-button>
+    <ion-button size="small" shape="round" (click)='click5()'>矩形</ion-button>
+  </div>
+  <div class="button-container">
+    <ion-button size="small" shape="round" (click)='deleteClick()'>清除所有覆盖物</ion-button>
+  </div>
+  <div id="container" class="map-container"></div>
+</ion-content>
+
+<style>
+  .button-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+    justify-content: center; /* Center align the buttons */
+    gap: 5px; /* Add some space between buttons */
+    margin-bottom: 10px;
+  }
+
+  .map-container {
+    height: 350px;
+    width: calc(100% - 20px);
+    margin: 0 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  ion-button {
+    --padding-start: 8px;
+    --padding-end: 8px;
+    --border-radius: 20px;
+    font-size: 12px;
+  }
+</style>

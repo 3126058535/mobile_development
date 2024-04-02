@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/tab2" text="返回"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{current}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="mydiv">
+    <p class="current-text">{{current}}</p>
+    <p class="description">Angular 是一种以【组件】为中心的架构，而不是以 HTML 为中心。</p>
+  </div>
+  <br/>
+  <div id='container'>
+    <div id='mydiv'></div>
+  </div>
+</ion-content>
+
+<style>
+  .mydiv {
+    padding: 20px;
+    background-color: #f8f8f8; /* Light gray background */
+    border-radius: 10px; /* Rounded corners */
+  }
+
+  .current-text {
+    font-size: 24px; /* Larger font size for the title */
+    font-weight: bold;
+    margin-bottom: 10px; /* Add some space below the title */
+  }
+
+  .description {
+    font-size: 14px; /* Smaller font size for the description */
+    margin-top: 10px; /* Add some space above the description */
+  }
+</style>
