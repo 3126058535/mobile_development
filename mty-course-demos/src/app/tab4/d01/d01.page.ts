@@ -27,10 +27,10 @@ export class D01Page {
     let map = new BMap.Map('bdmap');
     if (this.isKaifeng) {
       map.centerAndZoom(new BMap.Point(114.315745, 34.824635), 11);
-      map.setCurrentCity('开封');
+      map.setCurrentCity('河南大学');
     } else {
-      map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);
-      map.setCurrentCity('北京');
+      map.centerAndZoom(new BMap.Point(139.7500, 35.6764), 11);
+      map.setCurrentCity('东京');
     }
     map.addControl(new BMap.NavigationControl());
     map.addControl(new BMap.ScaleControl());

@@ -20,17 +20,21 @@ export class D02Page implements OnInit{
 
   ionViewDidLoad() {
     this.map = new BMap.Map("container");
-    this.map.centerAndZoom(new BMap.Point(116.404, 39.915), 13);
+    this.map.centerAndZoom(new BMap.Point(114.30619,34.831619), 15);
     this.map.enableScrollWheelZoom();
   }
 
   click1() {
-    let x = 116.399;
-    let y = 39.950;
     let polyline1 = new BMap.Polyline([
-      new BMap.Point(x, y),
-      new BMap.Point(x + 0.006, y + 0.010),
-      new BMap.Point(x + 0.026, y - 0.010)
+      new BMap.Point(114.310286,34.827945),
+      new BMap.Point(114.310358,34.816033),
+      new BMap.Point(114.315317,34.815973),
+      new BMap.Point(114.315532,34.818048),
+      new BMap.Point(114.31776,34.818226),
+      new BMap.Point(114.317976,34.819352),
+      new BMap.Point(114.320779,34.819293),
+      new BMap.Point(114.32121,34.828182),
+      new BMap.Point(114.310502,34.828064)
     ], {
         strokeColor: "blue",
         strokeWeight: 2,
@@ -40,13 +44,16 @@ export class D02Page implements OnInit{
   }
 
   click2() {
-    let x = 116.350658;
-    let y = 39.948285;
     let points = [
-      new BMap.Point(x, y),
-      new BMap.Point(x + 0.035788, y + 0.000996),
-      new BMap.Point(x + 0.038376, y - 0.024457),
-      new BMap.Point(x + 0.091843, y - 0.023682)
+      new BMap.Point(114.310286,34.827945),
+      new BMap.Point(114.310358,34.816033),
+      new BMap.Point(114.315317,34.815973),
+      new BMap.Point(114.315532,34.818048),
+      new BMap.Point(114.31776,34.818226),
+      new BMap.Point(114.317976,34.819352),
+      new BMap.Point(114.320779,34.819293),
+      new BMap.Point(114.32121,34.828182),
+      new BMap.Point(114.310502,34.828064)
     ];
     let symbol = new BMap.Symbol(BMap_Symbol_SHAPE_BACKWARD_OPEN_ARROW, {
       scale: 0.6,
@@ -66,7 +73,7 @@ export class D02Page implements OnInit{
   }
 
   click3() {
-    let circle = new BMap.Circle(new BMap.Point(116.404, 39.925), 500, {
+    let circle = new BMap.Circle(new BMap.Point(114.315676,34.822019), 800, {
       strokeColor: "blue", strokeWeight: 2, strokeOpacity: 0.5
     });
     this.map.addOverlay(circle);
@@ -74,18 +81,22 @@ export class D02Page implements OnInit{
 
   click4() {
     let polygon = new BMap.Polygon([
-      new BMap.Point(116.387112, 39.920977),
-      new BMap.Point(116.385243, 39.913063),
-      new BMap.Point(116.394226, 39.917988),
-      new BMap.Point(116.401772, 39.921364),
-      new BMap.Point(116.41248, 39.927893)
+      new BMap.Point(114.310286,34.827945),
+      new BMap.Point(114.310358,34.816033),
+      new BMap.Point(114.315317,34.815973),
+      new BMap.Point(114.315532,34.818048),
+      new BMap.Point(114.31776,34.818226),
+      new BMap.Point(114.317976,34.819352),
+      new BMap.Point(114.320779,34.819293),
+      new BMap.Point(114.32121,34.828182),
+      new BMap.Point(114.310502,34.828064)
     ], { strokeColor: "blue", strokeWeight: 2, strokeOpacity: 0.5 });
     this.map.addOverlay(polygon);
   }
 
   click5() {
-    let pStart = new BMap.Point(116.392214, 39.918985);
-    let pEnd = new BMap.Point(116.41478, 39.911901);
+    let pStart = new BMap.Point(114.310286,34.827945);
+    let pEnd = new BMap.Point(114.321282,34.816092);
     let rectangle = new BMap.Polygon([
       new BMap.Point(pStart.lng, pStart.lat),
       new BMap.Point(pEnd.lng, pStart.lat),
